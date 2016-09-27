@@ -23,8 +23,6 @@
 		
 		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
 
-    <!-- Testing -->
-
 		<?php wp_head(); ?>
 
 	</head>
