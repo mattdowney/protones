@@ -1,0 +1,145 @@
+header {
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .menu-toggle {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+}
+
+.logo {
+  margin: 0 auto 2.5% auto;
+  zoom: 1.5;
+}
+
+.main-nav p {
+  margin: 0 auto 4% auto;
+  width: 36%;
+  font-size: 1.28rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 600px) {
+  .main-nav p {
+    margin: 0 auto 9% auto;
+    width: 80%;
+  }
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.main-nav li {
+  display: inline;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-nav li:nth-child(1),
+.main-nav li:nth-child(2) {
+  margin-right: 4%;
+}
+    
+.main-nav li a {
+  font-size: 26px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 2px;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: $cyan;
+    width: 0%;
+    display: block;
+    transition: width .2s ease-in-out;
+    z-index: 1;
+  }
+  
+  &:hover {
+    color: #fff;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.full-menu {
+  visibility: hidden;
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: $bg;
+  -webkit-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  transform: scale(0.80);
+  text-align: center;
+  z-index: 99;
+}       
+
+.full-menu-open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.full-menu-transition {
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.full-menu-middle {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.menu-toggle {
+  font-family: 'nav-icons';
+  text-transform: uppercase;
+  color: $gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  color: $yellow;
+}
+
+.menu-toggle-close:hover {
+  color: #fff;
+}
+
+.menu-toggle-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-family: 'nav-icons';
+  color: #fff;
+  font-size: 1.75em !important;
+}

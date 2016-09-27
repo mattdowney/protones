@@ -1,0 +1,223 @@
+.content {
+	margin: 9px auto 0 auto;
+	text-align: center;
+	max-width: 700px;
+	position: relative;
+
+	h1 {
+		margin: 0;
+		padding :0;
+		font-size: 43px;
+		line-height: 1;
+		font-weight: 300;
+		color: #fff;
+	}
+
+	h2 {
+		color: $text;
+		font-size: 20px;
+		line-height: 1.5;
+		font-weight: 400;
+		margin: 20px auto 35px auto;
+		width: 85%;
+	}
+}
+
+.note {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.mask {
+	display: block;
+	margin: 0 auto;
+	max-width: 90px;
+	max-height: 109px;
+	overflow: hidden;
+}
+
+.gradient {
+	background: url(images/bg-dots.png) repeat;
+	// background: url(images/bg-gradient-wave.png) repeat;
+	// background: url(images/bg-gradient-triangle.png) repeat;
+	// background: url(images/bg-gradient-gray.png) repeat;
+	// background: url(images/bg-gradient.png) repeat;
+	z-index: 98;
+	-webkit-animation-name: masked-animation;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes masked-animation {
+	// 0% {background-position: bottom; }
+	// 100% {background-position: left; }
+	0% {background-position: right; }
+	100% {background-position: left; }
+}
+
+.gradient img {
+	width: 100%;
+	height: auto;
+	z-index: 99;
+}
+
+// START CTA BUTTONS
+
+.cta-buttons {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	position: relative;
+
+	@media (max-width: 400px) {
+		display: block;
+	}
+}
+
+.preview {
+	padding: 9px 13px 9px 20px;
+	background: $gray;
+
+	@media (max-width: 400px) {
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.buy-now {
+	background: $pink;
+	overflow: hidden !important;
+
+	&:hover {
+		background: $cyan;
+	}
+}
+
+.stripe-button-el {
+	padding: 0 !important;
+	background-image: none !important;
+	border-radius: 0px !important;
+	overflow: hidden !important;
+	box-shadow: inset 0 0 0 rgba(255,255,255,0) !important;
+
+	&:hover {
+		background-color: $cyan !important;
+	}
+}
+
+.stripe-button-el span {
+	font-family: 'Rubik', sans-serif !important;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+	padding: 11px 50px 11px 50px !important;
+	background: none !important;
+	background-image: none !important;
+	color: #fff !important;
+	text-shadow: 0 0 0 rgba(0,0,0,0) !important;
+	border-radius: 0px !important;
+	background-color: $pink !important;
+	font-size: 16px !important;
+	box-shadow: inset 0 0 0 rgba(255,255,255,0) !important;
+
+	&:hover {
+		background-color: $cyan !important;
+	}
+}
+
+.buy-now a.gumroad-button {
+	background-image: none !important;
+	background-color: transparent !important;
+	background-repeat: none !important;
+	border-radius: 0px !important;
+	box-shadow: rgba(0,0,0,0) 0 0 0 !important;
+	color: #fff !important;
+	font-family: "Rubik", sans-serif !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #fff !important;
+  margin: 0 !important;
+  box-shadow: 0px 0px 0px $pink inset !important;
+  transition: 0.15s ease !important;
+  display: inline !important;
+  padding: 30px 10px !important;
+  line-height: 2 !important;
+  font-size: inherit !important;
+  overflow: hidden !important;
+  background: yellow;
+}
+
+.buy-now a span {
+	height: inherit !important;
+	width: inherit !important;
+	background-image: none !important;
+	margin: 0 !important;
+}
+
+body div.gumroad-loading-indicator {
+	top: 33.5% !important;
+}
+
+// END CTA BUTTONS
+
+.share-buttons {
+	margin: 50px auto 50px auto;
+	border: none;
+	outline: none;
+
+	span {
+		font-family: protones;
+		margin: 0 auto;
+		line-height: 0;
+		background-color: $gray;
+		padding: 12px;
+		text-align: center;
+		font-size: 16px;
+		color: $bg;
+
+		&:hover {
+			color: #fff;
+			background-color: $cyan;
+		}
+	}
+
+	a.facebook, a.twitter {
+		margin-right: 20px;
+	}
+}
+
+p {
+	margin-bottom: 50px;
+}
+
+p a, h2 a {
+  color: $cyan;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  padding-bottom: 2px;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: $yellow;
+    width: 0%;
+    display: block;
+    transition: width .2s ease-in-out;
+    z-index: 1;
+  }
+  
+  &:hover {
+    color: $pink;
+    transition: 0.15s ease;
+    &:after {
+      width: 100%;
+    }
+  }
+}

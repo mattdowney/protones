@@ -1,0 +1,186 @@
+.scroll-line {
+  height: 5px;
+  background: $underline-color;
+  width: 0%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.post-wrap {
+	margin: 0 auto;
+	padding: 60px 0;
+	max-width: 880px;
+}
+
+.post-cat a {
+	margin: 30px auto;
+	text-align: center;
+	display: block;
+}
+
+.reading-time {
+	margin: 0 auto 60px auto;
+	text-align: center;
+	display: block;
+	color: $text;
+}
+
+.post-cat a:hover {
+	color: $hover-color;
+}
+
+.post-title {
+	margin: 0 0 14px 0;
+	padding: 0;
+	width: 100%;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 300;
+	line-height: 1.25em;
+	color: #fff;
+
+	span {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		display: block;
+		margin: 0 0 30px 0;
+		padding: 0;
+		font-size: 18px;
+	}
+}
+
+.search-title {
+	margin: 0 0 10px 0;
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 1.25em;
+	color: #fff;
+	text-align: center;
+
+	a {
+		color: #fff;
+
+		&:hover {
+		color: $hover-color;
+		}
+	}
+
+	
+}
+
+.post-img {
+	margin-bottom: 50px;
+	width: 100%;
+	height: auto;
+}
+
+.post-content {
+	padding: 0 48px;
+	max-width: 784px; /* Accounts for padding */
+	font-size: 19px;
+	line-height: 35px;
+}
+
+@media (max-width: 435px) {
+	.post-content {
+		padding: 0;
+	}
+}
+
+.post-content h2 {
+	font-size: 28px;
+	font-weight: 300;
+	color :#fff;
+}
+
+.post-content blockquote {
+	float: right;
+	width: 40%;
+	margin: 7px 0 40px 40px;
+	padding: 40px 30px 10px 30px;
+	font-family: 'Alegreya', sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	color: #fff;
+	font-size: 30px;
+	line-height: 40px;
+	border-left: 5px solid $hover-color;
+	background: url(images/bg-blockquote@2x.gif) no-repeat top left;
+	background-size: 35px 5px;
+}
+
+@media (max-width: 850px) {
+	.post-content blockquote {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 40px 0;
+	}
+}
+
+@media (max-width: 435px) {
+	.post-content blockquote {
+		width: 80%;
+	}
+}
+
+.share-content {
+	margin: 80px 0 40px 0;
+	text-align: center;
+}
+
+.share-content span {
+	display: inline-block; 
+	position:relative;
+	margin-right: 6px;
+	top: 1px;
+	font-family: 'nav-icons';
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	cursor: pointer;
+}
+
+.share-content .button:nth-child(1) {
+	margin-right: 30px;
+}
+
+@media (max-width: 660px) {
+	.share-content {
+		margin-bottom: 60px;
+		max-width: 660px;
+	}
+
+	.share-content .button {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		line-height: 1.25;
+		vertical-align: center;
+	}
+}
+
+.inline-tweet a {
+	padding: 6px 4px 5px 4px;
+	background: $dark-gray;
+	color: #fff;
+
+	&:hover {
+		background: $hover-color;
+	}
+}
+
+.dashnav-icons {
+	color: $link-color;
+}
