@@ -76,6 +76,7 @@ body {
 @media (max-width: 435px) {
   #wrap {
     padding: 30px; } }
+
 .button {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -246,6 +247,7 @@ td, th {
   src: url("./fonts/protones.eot?#iefix") format("embedded-opentype"), url("./fonts/protones.woff") format("woff"), url("./fonts/protones.ttf") format("truetype"), url("./fonts/protones.svg#protones") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class*='icon-']:before {
   display: inline-block;
   font-family: 'protones';
@@ -261,6 +263,7 @@ td, th {
   src: url("./fonts/nav-icons.eot?#iefix") format("embedded-opentype"), url("./fonts/nav-icons.woff") format("woff"), url("./fonts/nav-icons.ttf") format("truetype"), url("./fonts/nav-icons.svg#Icons") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class*='icon-']:before {
   display: inline-block;
   font-family: 'nav-icons';
@@ -313,6 +316,7 @@ header {
   .main-nav p {
     margin: 0 auto 9% auto;
     width: 80%; } }
+
 .main-nav ul {
   list-style: none;
   padding: 0;
@@ -426,6 +430,8 @@ header {
     font-weight: 400;
     margin: 20px auto 35px auto;
     width: 85%; }
+    .content h2 span {
+      color: #fff; }
 
 .note {
   margin-top: 20px;
@@ -451,6 +457,7 @@ header {
     background-position: right; }
   100% {
     background-position: left; } }
+
 .gradient img {
   width: 100%;
   height: auto;

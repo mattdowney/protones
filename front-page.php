@@ -21,7 +21,7 @@
 		</div> <!-- End .note -->
 
 		<h1>Different. Sounds. Better.</h1>
-		<h2>ProTones are premium iPhone ringtones and alerts that are distinct, polished, and one of a kind. This limited edition set of 20 handcrafted sounds can be yours for just $4.99.</h2>
+		<h2>ProTones are premium iPhone ringtones and alerts that are distinct, polished, and one of a kind. This limited edition set of 20 handcrafted sounds is <span>just $2.99 through <?php echo date('F'); ?></span>.</h2>
 
 		<div class="cta-buttons">
 			
@@ -34,7 +34,7 @@
 			</div> <!-- End .preview -->
 
 			<div class="buy-now">
-				<?php echo do_shortcode('[sell_media_file item_name="protones-20pack.zip" name="ProTones" description="20 iPhone Ringtones & Alerts" amount="4.99" label="Buy for $4.99" download_link="http://protones.co/wp-content/files/protones-fall-2016.zip"]'); ?>
+				<?php echo do_shortcode('[sell_media_file item_name="protones-20pack.zip" name="ProTones" description="20 iPhone Ringtones & Alerts" amount="2.99" label="Buy for $2.99" download_link="http://protones.co/wp-content/files/protones-fall-2016.zip"]'); ?>
 			</div> <!-- End .buy-now -->
 
 		</div> <!-- End .cta-buttons -->

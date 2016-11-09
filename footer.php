@@ -12,6 +12,7 @@
 
   ga('create', 'UA-71804555-2', 'auto');
   ga('send', 'pageview');
+
 </script>
 
 </html>
