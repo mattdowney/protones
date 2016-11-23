@@ -21,7 +21,7 @@
 		</div> <!-- End .note -->
 
 		<h1>Different. Sounds. Better.</h1>
-		<h2>ProTones are premium iPhone ringtones and alerts that are distinct, polished, and one of a kind. This limited edition set of 20 handcrafted sounds is <span>just $1.99 through <?php echo date('F'); ?></span>.</h2>
+		<h2>ProTones are premium iPhone ringtones and alerts that are distinct, polished, and one of a kind. This limited edition set of 20 handcrafted sounds is just <span>$1.99 through <?php echo date('F'); ?></span>.</h2>
 
 		<div class="cta-buttons">
 			
